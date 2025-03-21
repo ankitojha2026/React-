@@ -1,5 +1,6 @@
+
 function Header()
 {
-return <h1>Bharat Clock</h1>
+return <div ><h1 className="fw-bolder">Bharat Clock</h1></div>
 }
 export default Header;
