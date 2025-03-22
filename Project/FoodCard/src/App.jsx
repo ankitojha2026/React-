@@ -15,7 +15,12 @@ function App() {
       food.map(item => (
         <li className="list-group-item" key={item}> {item}
         
-        <button>Buy</button>
+        <button
+        
+        onClick={() => console.log(`${item}`)
+      }
+        
+        >Buy</button>
          </li>
       
       ))

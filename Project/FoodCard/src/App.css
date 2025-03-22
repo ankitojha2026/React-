@@ -25,14 +25,15 @@ li
   font-size: 20px;
   font-weight:500px;
   margin: 10px;
-  display: flex;
-  justify-content: space-between;
+  float: left;
 }
 button{
   color: white;
   background-color: rgb(27, 120, 213);
   border: none;
   border-radius: 5px;
-  width: 60px
+  width: 60px;
+  padding: 10px;
+  float: right;
   
 }
