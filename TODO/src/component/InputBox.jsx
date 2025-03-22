@@ -2,7 +2,9 @@ function InputBox()
 {
 return(
     <>
-    <h1>hello world</h1>
+    <input type="text" placeholder="Enter your task" />
+    <input type="date"  />
+    <button>Add</button>
     </>
 )
 }
