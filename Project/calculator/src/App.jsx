@@ -9,12 +9,14 @@ function App() {
             <div className={style.calculator}>
             <Display></Display>
             <ButtonConatiners></ButtonConatiners>
-        
-
-
-
-</div>
+            </div>
         </center>
+
+      
+
+
+
+
         );
 
 

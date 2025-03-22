@@ -1,0 +1,38 @@
+.container{
+
+border:2px solid black;
+width: 50%;
+min-width: 300px;
+border-radius: 5px;
+margin: 15px;
+padding: 0px;
+background-color: lightblue;
+}
+.Head{
+  text-align: center;
+}
+li
+{
+  list-style: none;
+  font-weight: 500;
+}
+.list-group{
+  display: flex;
+  flex-direction: column;
+  
+}
+.list-group-item{
+  font-size: 20px;
+  font-weight:500px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  color: white;
+  background-color: rgb(27, 120, 213);
+  border: none;
+  border-radius: 5px;
+  width: 60px
+  
+}
