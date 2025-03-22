@@ -1,0 +1,23 @@
+.App-Name{
+    color: red;
+
+}
+.Head{
+
+    padding:2%;
+    margin:2% ;
+    border: 1px black solid;
+    font-size: large;
+    font-weight: 500;
+}
+.Head-Button{
+    padding: 2%;
+    width: 15%;
+    color: white;
+    background-color: green;
+    border: 2px black solid;
+    border-radius: 40px;
+    cursor: hand;
+
+
+}
