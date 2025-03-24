@@ -2,7 +2,7 @@
 
 border:2px solid black;
 width: 50%;
-min-width: 300px;
+min-width: 200px;
 border-radius: 5px;
 margin: 15px;
 padding: 0px;
@@ -25,7 +25,6 @@ li
   font-size: 20px;
   font-weight:500px;
   margin: 10px;
-  float: left;
 }
 button{
   color: white;
@@ -36,4 +35,8 @@ button{
   padding: 10px;
   float: right;
   
+}
+.foodInput{
+  width: 90%;
+  padding: 5px;
 }
