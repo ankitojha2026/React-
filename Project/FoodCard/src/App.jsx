@@ -21,6 +21,8 @@ const handleBuyButton = (item) =>
 console.log(`${item}`)
 }
 
+//  this is a first hook concept 
+
 let textState = useState('Kadhi Chawal Pakaudi');
 let textStateVal=textState[0];
 let setStateMethod = textState[1];
