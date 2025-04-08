@@ -12,7 +12,12 @@ import { createContext, useReducer } from "react";
 
 const postListReducer = (currPostList , action)=>
 {
-    return currPostList;
+    let newPostList= currPostList;
+    if(action.type==='DELETE_POST')
+    {
+        newPostList= currPostList.filter((post) => post.id !== action.payload.postId);
+    }
+    return newPostList;
 };
 
 
@@ -20,13 +25,18 @@ const postListReducer = (currPostList , action)=>
 
     const [postList , dispatchPostList] =useReducer(postListReducer , DEFAULT_POST_LIST);
 
-    const addPost = () =>
+    const addPost = (newPost) =>
     {
 
+        console.log(newPost);
     };
 
-    const deletePost = () =>
+    const deletePost = (postId) =>
     {
+        dispatchPostList({type : 'DELETE_POST' ,
+             payload : {postId}},
+        );
+
 
     };
 
@@ -58,7 +68,7 @@ const DEFAULT_POST_LIST = [
         body : ' hi friend , i am going to my home . hope to enjoy a lot . peace out.',
         reaction : 20,
         userId : 'user-16',
-        tags :['vacation', 'holiday']
+        tags :['vacation', 'holiday' ,'fun']
     },
 ]
 

@@ -13,7 +13,6 @@ const PostList = ()=> {
     <div style={{display:'flex', gap:'20px', margin:'20px 20px'
     }}>
     
-    {console.log(postList)}
     {postList.map((post) => (<Post key={post.id} post={post} />))}
     
     </div>    
