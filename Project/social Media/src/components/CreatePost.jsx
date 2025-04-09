@@ -8,7 +8,7 @@ const CreatePost = () =>
 
 const Title=useRef();
 const Discription=useRef();  
-const PostId=useRef();
+const Reaction=useRef();
 const PostImage=useRef();
 const UserName=useRef();
 
@@ -20,45 +20,47 @@ const postHandler=()=>{
     const post={
         title:Title.current.value,
         discription:Discription.current.value,
-        id:PostId.current.value,
+        Reaction:Reaction.current.value,
         userName:UserName.current.value,
         postImage:PostImage.current.files[0],
     }
-    console.log(post);
-  }
+    addPost(post);}
+
+
+    
     return (
 
         <form className="CreatePost" onSubmit={()=>{postHandler()}}>
 
   <div className="mb-3">
     <label htmlFor="title" className="htmlForm-label">Title:  </label>
-    <input ref={Title} type="text" className="htmlForm-control" id="title"  placeholder='Enter title..' />
+    <input ref={Title} type="text" className="htmlForm-control" id="title"  placeholder='Enter title..' required />
   </div>
 
   <div className="mb-3">
     <label htmlFor="Discription" className="htmlForm-label">Discription:  </label>
-    <input  ref={Discription} type="text" className="htmlForm-control" id="Discription"  placeholder='Enter Discription..' />
+    <input  ref={Discription} type="text" className="htmlForm-control" id="Discription"  placeholder='Enter Discription..' required />
   </div>
 
 
   <div className="mb-3">
-    <label htmlFor="PostId" className="htmlForm-label">Id:  </label>
-    <input ref={PostId} type="number" className="htmlForm-control" id="PostId"  placeholder='Enter title..' />
+    <label htmlFor="Reaction" className="htmlForm-label">Reaction: </label>
+    <input ref={Reaction} type="number" className="htmlForm-control" id="Reaction"  placeholder='Enter Reaction...' required />
   </div>
 
   <div className="mb-3">
     <label htmlFor="userName" className="htmlForm-label">User Name:  </label>
-    <input ref={UserName} type="text" className="htmlForm-control" id="userName"  placeholder='Enter userName..' />
+    <input ref={UserName} type="text" className="htmlForm-control" id="userName"  placeholder='Enter userName..' required />
   </div>
 
   <div className="mb-3">
     <label htmlFor="PostImage" className="htmlForm-label">Post Image:  </label>
-    <input ref={PostImage} type="file" className="htmlForm-control" id="postImage"  placeholder='Enter userName..' />
+    <input ref={PostImage} type="file" className="htmlForm-control" id="postImage"  placeholder='Enter userName..'/>
   </div>
 
 
 
-  <button className="btn btn-primary">post</button>
+  <button type="submit" className="btn btn-primary">post</button>
 </form>
     )
 };

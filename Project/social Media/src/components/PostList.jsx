@@ -10,8 +10,8 @@ const PostList = ()=> {
     
     return (
     
-    <div style={{display:'flex', gap:'20px', margin:'20px 20px'
-    }}>
+    <div style={{display:'flex', gap:'20px', margin:'20px 20px', flexWrap:'wrap'}} className="PostList" >
+    
     
     {postList.map((post) => (<Post key={post.id} post={post} />))}
     
