@@ -5,6 +5,7 @@ import { createContext, useReducer } from "react";
     postList : [],
     addPost : ()=>{},
     deletePost : ()=>{},
+    addPosts : ()=>{},
 
 
  });
@@ -21,7 +22,11 @@ const postListReducer = (currPostList , action)=>
     else if(action.type==='ADD_POST')
     {
         // newPostList=[action ,...newPostList];
-        newPostList=[action.payload ,...currPostList];
+        newPostList=action.payload;
+    }
+    else if(action.type==='GET_POSTS')
+    {
+        newPostList=action.payload.posts;
     }
 
     return newPostList;
@@ -30,7 +35,7 @@ const postListReducer = (currPostList , action)=>
 
  const PostListProvider = ({ children }) =>{
 
-    const [postList , dispatchPostList] =useReducer(postListReducer , DEFAULT_POST_LIST);
+    const [postList , dispatchPostList] =useReducer(postListReducer , []);
 
     const addPost = (newPost) =>
     {
@@ -50,13 +55,10 @@ payload: {
     
 },
 
+})};
 
 
-})
-        
-    };
-
-    const deletePost = (postId) =>
+ const deletePost = (postId) =>
     {
         dispatchPostList({type : 'DELETE_POST' ,
              payload : {postId}},
@@ -65,10 +67,18 @@ payload: {
 
     };
 
+    
+const addPosts = (posts)=>{ 
+
+    dispatchPostList({type : 'GET_POSTS' ,
+        payload : {posts}},
+    );
+
+};
 
 
     return (
-    <PostList.Provider value={{postList , addPost , deletePost}}>
+    <PostList.Provider value={{postList , addPost ,addPosts, deletePost}}>
         {   children  }
     </PostList.Provider>
     );

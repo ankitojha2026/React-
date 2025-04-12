@@ -24,7 +24,18 @@ const postHandler=()=>{
         userName:UserName.current.value,
         postImage:PostImage.current.files[0],
     }
-    addPost(post);}
+
+   
+
+
+    addPost(post);
+  
+    Title.current.value="";
+    Discription.current.value="";
+    Reaction.current.value=""; 
+    UserName.current.value="";
+    PostImage.current.value="";
+  }
 
 
     
