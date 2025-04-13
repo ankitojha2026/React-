@@ -11,6 +11,9 @@ const reducer = (store = INITIAL_VALUE, action) => {
 
         case 'DECREMENT':
             return { counter: store.counter - 1 };
+        case 'ADDITION':
+            return {counter : store.counter + action.payload.number};
+        case 'SUBTRACTION':
         default:
             return store;
     }
@@ -27,3 +30,5 @@ store.subscribe(subscriber);
 store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'DECREMENT' });
+store.dispatch({ type: 'INCREMENT' });
+store.dispatch({ type: 'ADDITION' , payload :{number : 7} } );
