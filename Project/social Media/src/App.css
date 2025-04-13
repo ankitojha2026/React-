@@ -32,3 +32,11 @@ button[type="submit"]{
     border-radius: 4px;
     cursor: pointer;
 }
+.spiner{   
+    margin: 20% 50%;
+    width: 100px;
+    height: 100px;
+   
+
+
+}

@@ -3,6 +3,7 @@ import Post from './Post';
 import { PostList as PostListData } from '../store/PostListStore';
 import WellcomeMessage from './WellcomMessage';
 import Loading from './Loading';
+import { useState } from 'react';
 
 
 const PostList = ()=> {
@@ -17,8 +18,8 @@ const PostList = ()=> {
         // Fetch posts from the API
         fetch('https://dummyjson.com/posts')
         .then(res => res.json())
-        .then(data => {addPosts(data.posts)});
-        setFetchPosts(false);
+        .then(data => {addPosts(data.posts) , setFetchPosts(false);});
+        
 
     },[]);
     
@@ -27,8 +28,11 @@ const PostList = ()=> {
     <div style={{display:'flex', gap:'20px', margin:'20px 20px', flexWrap:'wrap'}} className="PostList" >
 
 
-    {fetchPosts && <Loading/>}
-   {postList.length===0 && <  WellcomeMessage/>}
+     
+   {fetchPosts && <Loading/> }
+     
+     
+   { !fetchPosts && postList.length===0 && <  WellcomeMessage/>}
     
     {postList.map((post) => (<Post key={post.id} post={post} />))}
     
