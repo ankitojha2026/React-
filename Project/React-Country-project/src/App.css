@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Header {   
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1b1b1b;
+    color: white;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Add this if needed for small screens */
+}
+
+li {
+    list-style: none;
+}
+
+.NavLink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.NavLink:hover {
+    color: #f61288;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.NavLink.active {
+    color: #00dcf0;
+    transform: scale(1.1);
+}
