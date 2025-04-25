@@ -1,0 +1,166 @@
+
+const countryData =
+
+[
+    {
+      "id": 1,
+      "countryName": "India",
+      "capital": "New Delhi",
+      "population": "1.4 billion",
+      "area": "3.287 million km²",
+      "historicalFacts": "India is the birthplace of major religions like Hinduism, Buddhism, Jainism, and Sikhism."
+    },
+    {
+      "id": 2,
+      "countryName": "United States",
+      "capital": "Washington, D.C.",
+      "population": "331 million",
+      "area": "9.834 million km²",
+      "historicalFacts": "Declared independence in 1776 and became a world superpower in the 20th century."
+    },
+    {
+      "id": 3,
+      "countryName": "China",
+      "capital": "Beijing",
+      "population": "1.41 billion",
+      "area": "9.597 million km²",
+      "historicalFacts": "One of the world's oldest civilizations, known for the Great Wall and dynastic history."
+    },
+    {
+      "id": 4,
+      "countryName": "Japan",
+      "capital": "Tokyo",
+      "population": "125.7 million",
+      "area": "377,975 km²",
+      "historicalFacts": "Japan was ruled by emperors and samurais and modernized rapidly during the Meiji Restoration."
+    },
+    {
+      "id": 5,
+      "countryName": "Germany",
+      "capital": "Berlin",
+      "population": "83 million",
+      "area": "357,022 km²",
+      "historicalFacts": "Germany was a central figure in both World Wars and was divided during the Cold War."
+    },
+    {
+      "id": 6,
+      "countryName": "United Kingdom",
+      "capital": "London",
+      "population": "67 million",
+      "area": "243,610 km²",
+      "historicalFacts": "Once the heart of the British Empire, the UK influenced global culture, politics, and science."
+    },
+    {
+      "id": 7,
+      "countryName": "France",
+      "capital": "Paris",
+      "population": "65 million",
+      "area": "643,801 km²",
+      "historicalFacts": "France was central to the Enlightenment and French Revolution and played key roles in both World Wars."
+    },
+    {
+      "id": 8,
+      "countryName": "Russia",
+      "capital": "Moscow",
+      "population": "144 million",
+      "area": "17.1 million km²",
+      "historicalFacts": "The Russian Empire became the Soviet Union in 1917 and collapsed in 1991."
+    },
+    {
+      "id": 9,
+      "countryName": "Brazil",
+      "capital": "Brasília",
+      "population": "213 million",
+      "area": "8.516 million km²",
+      "historicalFacts": "Brazil was a Portuguese colony until 1822 and is famous for its Amazon rainforest."
+    },
+    {
+      "id": 10,
+      "countryName": "Canada",
+      "capital": "Ottawa",
+      "population": "38 million",
+      "area": "9.985 million km²",
+      "historicalFacts": "Canada was colonized by both French and British powers and became independent in 1867."
+    },
+    {
+      "id": 11,
+      "countryName": "Australia",
+      "capital": "Canberra",
+      "population": "25 million",
+      "area": "7.692 million km²",
+      "historicalFacts": "Australia was originally inhabited by Aboriginal peoples for over 60,000 years."
+    },
+    {
+      "id": 12,
+      "countryName": "Italy",
+      "capital": "Rome",
+      "population": "60 million",
+      "area": "301,340 km²",
+      "historicalFacts": "Home to the Roman Empire and the birthplace of the Renaissance."
+    },
+    {
+      "id": 13,
+      "countryName": "Mexico",
+      "capital": "Mexico City",
+      "population": "128 million",
+      "area": "1.964 million km²",
+      "historicalFacts": "Site of advanced pre-Columbian civilizations like the Aztecs and Mayans."
+    },
+    {
+      "id": 14,
+      "countryName": "South Korea",
+      "capital": "Seoul",
+      "population": "52 million",
+      "area": "100,210 km²",
+      "historicalFacts": "Became a democracy after the Korean War and is now a major tech and culture hub."
+    },
+    {
+      "id": 15,
+      "countryName": "Egypt",
+      "capital": "Cairo",
+      "population": "110 million",
+      "area": "1.002 million km²",
+      "historicalFacts": "Famous for ancient civilization, pyramids, and pharaohs."
+    },
+    {
+      "id": 16,
+      "countryName": "Turkey",
+      "capital": "Ankara",
+      "population": "85 million",
+      "area": "783,562 km²",
+      "historicalFacts": "Was the center of the Ottoman Empire and earlier, the Byzantine Empire."
+    },
+    {
+      "id": 17,
+      "countryName": "Saudi Arabia",
+      "capital": "Riyadh",
+      "population": "35 million",
+      "area": "2.15 million km²",
+      "historicalFacts": "Birthplace of Islam and home to Mecca and Medina."
+    },
+    {
+      "id": 18,
+      "countryName": "Argentina",
+      "capital": "Buenos Aires",
+      "population": "45 million",
+      "area": "2.78 million km²",
+      "historicalFacts": "Declared independence from Spain in 1816 and has a rich history of cultural evolution."
+    },
+    {
+      "id": 19,
+      "countryName": "Indonesia",
+      "capital": "Jakarta",
+      "population": "273 million",
+      "area": "1.904 million km²",
+      "historicalFacts": "Largest Muslim-majority nation, it gained independence from the Dutch in 1945."
+    },
+    {
+      "id": 20,
+      "countryName": "South Africa",
+      "capital": "Pretoria (administrative)",
+      "population": "60 million",
+      "area": "1.221 million km²",
+      "historicalFacts": "Ended apartheid in the 1990s and elected Nelson Mandela as president."
+    }
+  ]
+  export default countryData;

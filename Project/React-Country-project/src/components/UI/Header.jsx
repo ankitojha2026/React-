@@ -3,7 +3,7 @@ import '..//../App.css';
 import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
-        <header className="Header">
+        <header className="Header ">
 
             <div><img src="/Images/logo.png" alt="Logo"  width="50px"/></div>
 
