@@ -74,78 +74,7 @@ const countryData =
       "area": "8.516 million km²",
       "historicalFacts": "Brazil was a Portuguese colony until 1822 and is famous for its Amazon rainforest."
     },
-    {
-      "id": 10,
-      "countryName": "Canada",
-      "capital": "Ottawa",
-      "population": "38 million",
-      "area": "9.985 million km²",
-      "historicalFacts": "Canada was colonized by both French and British powers and became independent in 1867."
-    },
-    {
-      "id": 11,
-      "countryName": "Australia",
-      "capital": "Canberra",
-      "population": "25 million",
-      "area": "7.692 million km²",
-      "historicalFacts": "Australia was originally inhabited by Aboriginal peoples for over 60,000 years."
-    },
-    {
-      "id": 12,
-      "countryName": "Italy",
-      "capital": "Rome",
-      "population": "60 million",
-      "area": "301,340 km²",
-      "historicalFacts": "Home to the Roman Empire and the birthplace of the Renaissance."
-    },
-    {
-      "id": 13,
-      "countryName": "Mexico",
-      "capital": "Mexico City",
-      "population": "128 million",
-      "area": "1.964 million km²",
-      "historicalFacts": "Site of advanced pre-Columbian civilizations like the Aztecs and Mayans."
-    },
-    {
-      "id": 14,
-      "countryName": "South Korea",
-      "capital": "Seoul",
-      "population": "52 million",
-      "area": "100,210 km²",
-      "historicalFacts": "Became a democracy after the Korean War and is now a major tech and culture hub."
-    },
-    {
-      "id": 15,
-      "countryName": "Egypt",
-      "capital": "Cairo",
-      "population": "110 million",
-      "area": "1.002 million km²",
-      "historicalFacts": "Famous for ancient civilization, pyramids, and pharaohs."
-    },
-    {
-      "id": 16,
-      "countryName": "Turkey",
-      "capital": "Ankara",
-      "population": "85 million",
-      "area": "783,562 km²",
-      "historicalFacts": "Was the center of the Ottoman Empire and earlier, the Byzantine Empire."
-    },
-    {
-      "id": 17,
-      "countryName": "Saudi Arabia",
-      "capital": "Riyadh",
-      "population": "35 million",
-      "area": "2.15 million km²",
-      "historicalFacts": "Birthplace of Islam and home to Mecca and Medina."
-    },
-    {
-      "id": 18,
-      "countryName": "Argentina",
-      "capital": "Buenos Aires",
-      "population": "45 million",
-      "area": "2.78 million km²",
-      "historicalFacts": "Declared independence from Spain in 1816 and has a rich history of cultural evolution."
-    },
+  
     {
       "id": 19,
       "countryName": "Indonesia",

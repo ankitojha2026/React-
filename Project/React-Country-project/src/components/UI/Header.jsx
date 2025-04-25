@@ -3,9 +3,9 @@ import '..//../App.css';
 import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
-        <header className="Header ">
+        <header className="Header bg-dark  text-white">
 
-            <div><img src="/Images/logo.png" alt="Logo"  width="50px"/></div>
+            <div className="m-10rem"><NavLink to="/"><img src="/Images/logo.png" alt="Logo"  width="50px"/></NavLink></div>
 
             <nav className="nav">
                 <ul>

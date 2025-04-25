@@ -4,7 +4,7 @@ import About from "./About";
 
 const Home = () => {
   return (<>
-    <div className="container my-5 mt-5">
+    <div className="container  my-5 mt-5">
       <div className="row align-items-center rounded-4 border shadow-lg bg-white">
         {/* Text Content */}
         <div className="col-lg-7 p-4 p-lg-5">
