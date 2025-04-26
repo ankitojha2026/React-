@@ -26,7 +26,7 @@ const Footer = () =>
 
 
 
-        <footer class="py-3 my-4">
+        <footer className="py-3 my-4">
 
 <hr />
 
@@ -38,7 +38,7 @@ const Footer = () =>
     {
         const {icon,title,details}=current;
         return<>
-                <div className="col">
+                <div className="col" key={index}>
             
                <div>{icons[icon]}  <span className="card-text">{title}</span></div>
                 <div><p className="card-text">{details}</p></div>

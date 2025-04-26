@@ -1,5 +1,6 @@
 import { useEffect, useState, useTransition } from "react";
 import { getAllCountries } from "../API/postApi";
+import { NavLink } from "react-router-dom";
 
 const Country = () => {
   const [isPending, startTransition] = useTransition();
@@ -32,7 +33,7 @@ const Country = () => {
             <p className="card-text">Capital: {country.capital?.[0]}</p>
             <p className="card-text">Capital: {country.population}</p>
             <p className="card-text">Capital: {country.region}</p>
-            <a href="#" className="btn btn-primary">Know more</a>
+            <NavLink to={`/country/${country.name.common}`}><h1 className="btn btn-primary"> Know More</h1></NavLink>
           </div>
         </div>
       ))}

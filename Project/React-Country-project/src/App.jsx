@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './components/Layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
+import CountryInd from './components/Layout/CountryInd';
 
 
 
@@ -16,6 +17,16 @@ import ErrorPage from './pages/ErrorPage';
 const rounter = createBrowserRouter([
 
     {
+        // here i'm creating a route for the app
+        // and i'm using the path parameter to create a route
+        // and i'm using the element parameter to create a route
+        // and i'm using the errorElement parameter to create a route
+        // and i'm using the children parameter to create a route
+        // and i'm using the path parameter to create a route
+        // and i'm using the element parameter to create a route
+        // and i'm using the errorElement parameter to create a route
+        // and i'm using the children parameter to create a route
+        // and i'm using the path parameter to create a route
         path: '/',
         element: <AppLayout />,
         errorElement:<ErrorPage/>,
@@ -23,6 +34,7 @@ const rounter = createBrowserRouter([
         {path: 'about', element: <About />},
         {path: 'contact', element: <Contact />},
         {path: 'country', element: <Country />},
+        {path: 'country/:id', element: <CountryInd/>},
     ]
 
     }
@@ -34,6 +46,9 @@ const rounter = createBrowserRouter([
 
 
 function App() {
+    // here i'm using the RouterProvider to create a router
+    // and i'm using the router parameter to create a router
+    
 
 return <RouterProvider router={rounter} >
     <h1>heelo</h1>
