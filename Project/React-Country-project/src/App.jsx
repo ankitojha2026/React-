@@ -36,12 +36,7 @@ const rounter = createBrowserRouter([
         {path: 'country', element: <Country />},
         {path: 'country/:id', element: <CountryInd/>},
     ]
-
-    }
-
-
-
-
+}
   ]);
 
 
